@@ -1,7 +1,4 @@
-pipeline:
-  build:
-    image: node:latest
-    commands: npm install
-  test:
-    image: node:latest
-    commands: npm run test
+image: python
+script:
+ - python helloworld.py
+ - echo "Build has been completed."
